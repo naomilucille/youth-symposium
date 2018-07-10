@@ -51,13 +51,18 @@
 
     /* Style page content */
 
-    .main {
-        margin-left: 199.5px;
-        /* Same as the width of the sidebar */
-        padding: 0px;
-        background: url(content/mushroom.jpg);
-        background-size: cover;
+    body {
+        height: 100%;
+        width: 100%;
+        background-image: url(content/mushroom.jpg);
+        /*your background image*/
         background-repeat: no-repeat;
+        /*we want to have one single image not a repeated one*/
+        background-size: cover;
+        /*this sets the image to fullscreen covering the whole screen*/
+        /*css hack for ie*/
+        margin-top: 20px;
+        margin-left: 210px;
     }
 
     /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -69,51 +74,45 @@
         .sidenav a {
             font-size: 18px;
         }
-    }
 
-    .tab {
-        margin-left: 50px;
-        margin-bottom: 0px;
-    }
+        .tab {
+            margin-left: 50px;
+            margin-bottom: 0px;
+        }
 
-    .doubletab {
-        margin-left: 70px;
-        margin-top: 0px;
-    }
+        .doubletab {
+            margin-left: 70px;
+            margin-top: 0px;
+        }
 
-    .main {
-        padding: 10px;
-    }
 
-    h4 {
-        margin-left: 20px;
-    }
+        h4 {
+            margin-left: 20px;
+        }
 
-    img {
-        height: 150px;
-        width: 136px;
-    }
+        img {
+            height: 150px;
+            width: 136px;
+        }
 
-    .pictures {
-        text-align: center;
-        width: auto;
-    }
+        .pictures {
+            text-align: center;
+            width: auto;
+        }
+        body {}
 
 </style>
 
-<div class="main">
-
-    <body>
-        <h1>
-            Contact your program leader, Naomi (奥米) Garcia:
-        </h1>
-        <h2 class="doubletab">
-            <br>phone: 443-422-1858
-            <br>email: garcia@uschinastrong.org
-            <br>wechat: naomilucille
-        </h2>
-        <h3>
-            You can contact me for anything: questions, concerns, hellos, and greetings! <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </h3>
-    </body>
-</div>
+<body>
+    <h1>
+        Contact your program leader, Naomi (奥米) Garcia:
+    </h1>
+    <h2 class="doubletab">
+        <br>phone: 443-422-1858
+        <br>email: garcia@uschinastrong.org
+        <br>wechat: naomilucille
+    </h2>
+    <h3>
+        You can contact me for anything: questions, concerns, hellos, and greetings!
+    </h3>
+</body>
