@@ -1,5 +1,107 @@
 <!DOCTYPE html>
 
+<head>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<div class="sidenav">
+    <a href="homepage2.html">Home Page</a>
+    <a href="eventschedule.html">Event Schedule</a>
+    <a href="coordinators.html">Coordinators</a>
+    <a href="photos.html">Photos</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<style>
+    .sidenav {
+        height: 100%;
+        /* Full-height: remove this if you want "auto" height */
+        width: 200px;
+        /* Set the width of the sidebar */
+        position: fixed;
+        /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        left: 0;
+        background-color: #111;
+        /* Black */
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 20px;
+    }
+
+    /* The navigation menu links */
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    /* Style page content */
+
+    body {
+        height: 100%;
+        width: 100%;
+        background-image: url(content/mushroom.jpg);
+        /*your background image*/
+        background-repeat: no-repeat;
+        /*we want to have one single image not a repeated one*/
+        background-size: cover;
+        /*this sets the image to fullscreen covering the whole screen*/
+        /*css hack for ie*/
+        margin-top: 20px;
+        margin-left: 210px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+
+        .tab {
+            margin-left: 50px;
+            margin-bottom: 0px;
+        }
+
+        .doubletab {
+            margin-left: 70px;
+            margin-top: 0px;
+        }
+
+
+        h4 {
+            margin-left: 20px;
+        }
+
+        img {
+            height: 150px;
+            width: 136px;
+        }
+
+        .pictures {
+            text-align: center;
+            width: auto;
+        }
+
+</style>
+
 <h3>Hi friends! I'm Naomi, your student program coordinator. My Chinese name is 奥米. I'm making this website so we can get to know each other a bit and for you to see what we have planned! Please reach out to me with any questions you have - in either English or Chinese!</h3>
 <img src=u rl( "content/naomihead.jpg")>
 <em>A little bit about me: </em> I'm a current graduate student at Johns Hopkins University studying international economics and China studies. I have lived in China for three years. From 2016-2017, I worked at the American Chamber of Commerce in Shanghai while completing the first year of my Master's degree at the Hopkins-Nanjing Center. From 2015-2016, I taught English in Foshan, and I studied abroad as a student at Fudan University in 2015. In 2015 I began studying Chinese, and I also began learning to play the erhu, the instrument that I am still the most passionate about! I hope you feel free to reach out to me with any questions you might have, or just to say hello! I'm so excited to meet you all! :)
