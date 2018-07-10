@@ -51,18 +51,10 @@
 
     /* Style page content */
 
-    body {
-        height: 100%;
-        width: 100%;
-        background-image: url(content/mushroom.jpg);
-        /*your background image*/
-        background-repeat: no-repeat;
-        /*we want to have one single image not a repeated one*/
-        background-size: cover;
-        /*this sets the image to fullscreen covering the whole screen*/
-        /*css hack for ie*/
-        margin-top: 20px;
-        margin-left: 210px;
+    .main {
+        margin-left: 199.5px;
+        /* Same as the width of the sidebar */
+        padding: 0px;
     }
 
     /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -74,48 +66,79 @@
         .sidenav a {
             font-size: 18px;
         }
-
-        .tab {
-            margin-left: 50px;
-            margin-bottom: 0px;
-        }
-
-        .doubletab {
-            margin-left: 70px;
-            margin-top: 0px;
-        }
+    }
 
 
-        h4 {
-            margin-left: 20px;
-        }
+    .pictures {
+        display: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+        opacity: 1;
+    }
 
-        img {
-            height: 150px;
-            width: 136px;
-        }
+    .fulbright {
+        display: center;
+        height: 250px;
+        width: 500px;
+    }
 
-        .pictures {
-            text-align: center;
-            width: auto;
-        }
+    h1 {
+        color: darkred;
+        background-color: rgb(229, 248, 249);
+        text-align: center;
+        margin: auto;
+        font-family: copperplate;
+    }
 
-        footer {
-            margin-left: 204px;
-            font-size: 14px;
-        }
+    img:hover {
+        opacity: 1.0;
+    }
+
+    h3 {
+        color: rgb(193, 5, 5);
+        text-align: justify;
+        margin: auto;
+        font-family: copperplate;
+    }
+
+    ul {
+        color: rgb(193, 5, 5);
+        margin: auto;
+        font-family: copperplate;
+    }
+
+    body {
+        background-color: rgb(237, 249, 249);
+    }
+
+    footer {
+        margin-left: 204px;
+        font-size: 14px;
+    }
+
+    header {
+        margin: 50px;
+    }
 
 </style>
 
-<h3>Hi friends! I'm Naomi, your student program coordinator. My Chinese name is 奥米. I'm making this website so we can get to know each other a bit and for you to see what we have planned! Please reach out to me with any questions you have - in either English or Chinese!</h3>
-<img src=u rl( "content/naomihead.jpg")>
-<em>A little bit about me: </em> I'm a current graduate student at Johns Hopkins University studying international economics and China studies. I have lived in China for three years. From 2016-2017, I worked at the American Chamber of Commerce in Shanghai while completing the first year of my Master's degree at the Hopkins-Nanjing Center. From 2015-2016, I taught English in Foshan, and I studied abroad as a student at Fudan University in 2015. In 2015 I began studying Chinese, and I also began learning to play the erhu, the instrument that I am still the most passionate about! I hope you feel free to reach out to me with any questions you might have, or just to say hello! I'm so excited to meet you all! :)
-<ul>
-    <li>Wechat ID: naomilucille</li>
-    <li>email: garcia@uschinastrong.org</li>
-    <li>phone: 443-422-1858</li>
-</ul>
+<div class="main">
 
-<footer>
-    <br> © US China Strong 2018. Website built by Naomi Garcia. All Rights Reserved.
-</footer>
+    <body>
+        <header>
+            <h1>Hi friends! I'm Naomi, your student program coordinator. My Chinese name is 奥米. I'm making this website so we can get to know each other a bit and for you to see what we have planned! Please reach out to me with any questions you have - in either English or Chinese! </h1>
+
+            <h1>
+                <img src="content/naomi_scott_erhu.jpg" class="pictures">
+            </h1>
+
+            <h3> <br>I'm a current graduate student at Johns Hopkins University studying international economics and China studies. I have lived in China for three years. From 2016-2017, I worked at the American Chamber of Commerce in Shanghai while completing the first year of my Master's degree at the Hopkins-Nanjing Center. From 2015-2016, I taught English in Foshan, and I studied abroad as a student at Fudan University in 2015. In 2015 I began studying Chinese, and I also began learning to play the erhu, the instrument that I am still the most passionate about! I hope you feel free to reach out to me with any questions you might have, or just to say hello! I'm so excited to meet you all! :)</h3>
+            <ul>
+                <li>Wechat ID: naomilucille</li>
+                <li>email: garcia@uschinastrong.org</li>
+                <li>phone: 443-422-1858</li>
+            </ul>
+        </header>
+    </body>
+</div>
