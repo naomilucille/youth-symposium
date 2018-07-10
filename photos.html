@@ -78,8 +78,16 @@
         margin-top: 0px;
     }
 
-    .main {
-        padding: 15px;
+    body {
+        height: 100%;
+        width: 100%;
+        background-image: url(content/photophoto.jpg);
+        /*your background image*/
+        background-repeat: no-repeat;
+        /*we want to have one single image not a repeated one*/
+        background-size: cover;
+        /*this sets the image to fullscreen covering the whole screen*/
+        /*css hack for ie*/
     }
 
     h4 {
@@ -96,14 +104,15 @@
         width: auto;
     }
 
+    h3 {
+        text-align: center;
+        padding: 15px 15px 15px 250px;
+    }
+
 </style>
 
-<div class="main">
-
-    <body>
-        <h3>
-            There's nothing here yet, but keep checking throughout the Symposium - I'll be uploading fun shots of our team!
-        </h3>
-        <h3 class="pictures"> <br> <img src="content/stickhands.jpg" /> </h3>
-    </body>
-</div>
+<body>
+    <h3>
+        There's nothing here yet, but keep checking throughout the Symposium - I'll be uploading fun shots of our team!
+    </h3>
+</body>
