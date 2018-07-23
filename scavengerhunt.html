@@ -17,12 +17,6 @@
 </div>
 
 <style>
-    .logo {
-        text-align: center;
-        width: 200px;
-        height: 150px;
-    }
-
     .sidenav {
         height: 100%;
         /* Full-height: remove this if you want "auto" height */
@@ -64,7 +58,6 @@
         margin-left: 199.5px;
         /* Same as the width of the sidebar */
         padding: 0px;
-        background: rgba(229, 251, 255, 0.6);
     }
 
     /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -76,53 +69,45 @@
         .sidenav a {
             font-size: 18px;
         }
-        body {
-            padding: 0;
-        }
     }
 
-    .tab {
-        margin-left: 50px;
-        margin-bottom: 0px;
-    }
 
-    .doubletab {
-        margin-left: 70px;
-        margin-top: 0px;
-    }
-
-    h4 {
-        margin-left: 20px;
-    }
-
-    img {
-        height: 25%;
-        width: 25%;
+    .main {
+        padding: 20px;
     }
 
     h1 {
+        color: rgb(113, 18, 135);
         text-align: center;
-        padding: 13px;
-        color: rgb(91, 25, 132);
-    }
-
-    h3 {
-        text-align: center;
-        margin-left: 200px;
-        margin-right: 200px;
-        font-style: italic;
-
     }
 
     h2 {
-        text-align: center;
-        color: black;
+        color: darkblue;
+        font-size: 28px;
+    }
+
+    h4 {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    .time {
+        color: rgb(111, 98, 255);
+    }
+
+    footer {
+        margin-left: 204px;
+        margin-right: 300px;
+        font-size: 14px;
+    }
+
+    .teddy {
+        width: 500px;
+        height: 600px;
     }
 
     body {
-        background-image: url(content/delback.jpg);
-        background-size: cover;
-        margin: 80px;
+        background-color: cornsilk;
     }
 
 </style>
@@ -130,13 +115,37 @@
 <div class="main">
 
     <body>
-        <h2>
-            <a href="中方学生.html">
-Chinese Delegates</a>
-        </h2>
-        <h2>
-            <a href="美方学生.html">
-American Delegates</a>
-        </h2>
+        <SCRIPT>
+            function passWord() {
+                var testV = 1;
+                var pass1 = prompt('Please Enter Your Password', ' ');
+                while (testV < 3) {
+                    if (!pass1)
+                        history.go(-1);
+                    if (pass1.toLowerCase() == "1234578") {
+                        window.open('map2.html', "_self");
+                        break;
+                    }
+                    testV += 1;
+                    var pass1 =
+                        prompt('Password Incorrect, Please contact Naomi 奥米 for your login', 'Password');
+                }
+
+
+
+
+                if (pass1.toLowerCase() != "password" & testV == 3)
+                    history.go(-1);
+                return " ";
+            }
+
+        </SCRIPT>
+        <CENTER>
+            <FORM>
+                <h1> <em>I'll hand out the password right as we start the hunt!</em></h1>
+                <input type="button" value="Enter Protected Area" onClick="passWord()">
+                <br> <br> <br> <img src="content/patience.JPG" class="teddy">
+            </FORM>
+        </CENTER>
+
     </body>
-</div>
