@@ -69,8 +69,6 @@
                 var testV = 1;
                 var pass1 = prompt('Please Enter Your Password', '');
                 while (testV < 3) {
-                    if (!pass1)
-                        history.go(-1);
                     if (MD5(pass1.toLowerCase()) == "9f08e0e14eb93c9cd05fdcae991d5f35") {
                         window.open('map2.html', "_self");
                         break;
