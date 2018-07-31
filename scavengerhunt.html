@@ -5,49 +5,70 @@
     <link href="main.css" rel="stylesheet">
     <meta name="robots" content="noindex">
     <meta charset='utf-8'>
-
     <style>
-        .main {
-            padding: 20px;
+        .fulbright {
+            display: center;
+            height: 250px;
+            width: 500px;
         }
 
         h1 {
-            color: rgb(113, 18, 135);
+            color: darkred;
+            background-color: rgb(229, 248, 249);
             text-align: center;
+            margin: auto;
+            font-family: copperplate;
         }
 
         h2 {
-            color: darkblue;
-            font-size: 28px;
+            color: rgb(193, 5, 5);
+            text-align: center;
+            margin: auto;
+            font-family: copperplate;
         }
 
-        h4 {
-            margin-left: 40px;
-            font-size: 20px;
-        }
-
-        .time {
-            color: rgb(111, 98, 255);
+        body {
+            background-color: rgb(237, 249, 249);
+            margin-left: 200px;
         }
 
         footer {
             margin-left: 204px;
-            margin-right: 300px;
             font-size: 14px;
         }
 
-        .teddy {
-            width: 500px;
-            height: 600px;
+        img {
+            height: 100%;
+            width: 100%;
         }
 
-        body {
-            background-color: cornsilk;
+        .map {
+            height: 200%;
+            width: 100%;
+            margin-left: 0px;
+            padding: 0px;
+            background-repeat: no-repeat;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: justify;
+        }
+
+        .pictures {
+            height: 20%;
+            width: 20%;
+        }
+
+        .info {
+            color: red;
+            text-align: center;
         }
 
     </style>
-    <script src="md5.js"></script>
-
 </head>
 
 <div class="sidenav">
@@ -61,38 +82,104 @@
     <br> <br> <br> <br> <br> <img src="content/USChinaStrong_transparent.png" class="logo">
 </div>
 
-<div class="main">
-
-    <body>
-        <SCRIPT>
-            function passWord() {
-                var testV = 1;
-                var pass1 = prompt('Please Enter Your Password', '');
-                while (testV < 3) {
-                    if (MD5(pass1.toLowerCase()) == "9f08e0e14eb93c9cd05fdcae991d5f35") {
-                        window.open('map2.html', "_self");
-                        break;
-                    }
-                    testV += 1;
-                    var pass1 =
-                        prompt('Password Incorrect, Please contact Naomi 奥米 for your login', '');
-                }
 
 
+<body>
+    <div class="map">
+        <img src="content/scavengerhunt.png" class="map">
+    </div>
+
+    <h1>
+        Remember: All team members must be in each photo, and make sure you're on time to Renwick at 5:00. Every minute late is 10 points off your total! Good luck! </h1>
+    <br>
+    <h1 class="info"> <a href="groupphotos.html" target="_blank" rel="noopener">Upload your team photos and see everyone's progress as you go here</a></h1>
+    <br>
+    <h2>
+        Tasks:
+    </h2>
+    <h3>
+        Take a group photo with the sign outside of the World Health Organization (10 points)
+        <br> <img src="content/who.jpg" class="pictures">
+        <br> ___________________________________
 
 
-                if (MD5(pass1.toLowerCase()) != "9f08e0e14eb93c9cd05fdcae991d5f35" & testV == 3)
-                    history.go(-1);
-                return " ";
-            }
+        <BR>
+        <BR> <br> Take a group photo with the flag at the Mexican Embassy (10 points)
+        <br> <img src="content/emb.jpg" class="pictures">
+        <br> ___________________________________
 
-        </SCRIPT>
-        <CENTER>
-            <FORM>
-                <h1> <em>I'll hand out the password right as we start the hunt!</em></h1>
-                <input type="button" value="Enter Protected Area" onClick="passWord()">
-                <br> <br> <br> <img src="content/patience.JPG" class="teddy">
-            </FORM>
-        </CENTER>
+        <BR>
+        <BR> <br> Take a photo with the blue lady at the Renwick Gallery (30 points)
+        <br> <img src="content/renwisk.jpg" class="pictures">
+        <br> ___________________________________
 
-    </body>
+        <BR>
+        <BR> <br> Take a photo outside of the White House! (80 points)
+        <br> <img src="content/wh.jpg" class="pictures">
+        <br> ___________________________________
+
+
+        <BR>
+        <BR> <br> Take a photo outside of the Treasury Department (10 points)
+        <br> <img src="content/treas.jpg" class="pictures">
+        <br> ___________________________________
+
+        <BR>
+        <BR> <br> Take a group pic with James Madison at the National Portrait Gallery! (30 points)
+        <br> <img src="content/mad.jpg" class="pictures">
+        <br> ___________________________________
+
+
+        <BR>
+        <BR> <br> Take a group pic with this weird crushed car by the Sculpture Garden (20 points)
+        <br> <img src="content/sculp.jpg" class="pictures">
+        <br> ___________________________________
+
+        <BR>
+        <BR> <br> Take a group pic with the Capitol Building in the background (40 points)
+        <br> <img src="content/cap.jpg" class="pictures">
+        <br> ___________________________________
+
+        <BR>
+        <BR> <br> Take a group pic with any <em> purple </em> flower at the Botanic Garden (10 points)
+        <br> <img src="content/bot.jpg" class="pictures">
+        <br> ___________________________________
+
+
+        <BR>
+        <BR> <br> Take a group pic by the fountain at the Museum of African American Art (30 points)
+        <br> <img src="content/afr.jpg" class="pictures">
+        <br> ___________________________________
+
+        <BR>
+        <BR> <br> Take a pic with the ancient Chinese bells at the Sackler Gallery (30 points)
+        <br> <img src="content/sack.jpg" class="pictures">
+        <br> ___________________________________
+
+
+        <BR>
+        <BR> <br> Take a pic with the Washington Monument in the background (50 points)
+        <br> <img src="content/washmon.jpg" class="pictures">
+        <br> ___________________________________
+
+        <BR>
+        <BR> <br> Take a pic at the Lincoln reflecting pool (10 points)
+        <br> <img src="content/pool.jpg" class="pictures">
+        <br> ___________________________________
+
+        <BR>
+        <BR> <br> Take a pic with the Lincoln Memorial in the background (10 points)
+        <br> <img src="content/lin.jpg" class="pictures">
+        <br> ___________________________________
+
+        <BR>
+        <BR> <br>Take a group photo on the upstairs balcony at the Kennedy Center (40 points)
+        <br> <img src="content/kennedycenter.jpg" class="pictures">
+        <br> ___________________________________
+
+        <BR>
+        <BR> <br>Take a group photo at the Georgetown Waterfront (70 points)
+        <br> <img src="content/george.jpg" class="pictures">
+        <br>
+    </h3>
+</body>
